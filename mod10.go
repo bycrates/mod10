@@ -7,7 +7,10 @@ import (
 )
 
 const (
-	stringNotDigits = "specified_string_is_not_int"
+	// StringNotDigits is the error returned if
+	// the specified string to String functions
+	// cannot be converted into an integer
+	StringNotDigits = "specified_string_is_not_int"
 )
 
 // reverse a string
