@@ -88,7 +88,7 @@ func AddControlBit(digits int) string {
 func AddControlBitString(digits string) (string, error) {
 	intDigits, err := strconv.Atoi(digits)
 	if err != nil {
-		return "", errors.New(stringNotDigits)
+		return "", errors.New(StringNotDigits)
 	}
 
 	return AddControlBit(intDigits), nil
@@ -105,7 +105,7 @@ func Check(digits int) bool {
 func CheckString(digits string) (bool, error) {
 	intDigits, err := strconv.Atoi(digits)
 	if err != nil {
-		return false, errors.New(stringNotDigits)
+		return false, errors.New(StringNotDigits)
 	}
 
 	return Check(intDigits), nil
